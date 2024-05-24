@@ -1,0 +1,212 @@
+/* Base styles */
+.nav1 {
+  width: 20%;
+  height: 100%;
+  background-color: #F8F8FD;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  transition: width 0.3s, display 0.3s; /* Smooth transition */
+}
+
+.nav-info {
+  width: 100%;
+  border-bottom: 2px solid #CCCCF5;
+}
+
+.nav-li {
+  padding-left: 20px;
+  padding-right: 15px;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  color: #7C8493;
+  font-size: 1rem; /* Responsive font size */
+}
+
+.logo {
+  width: 80%;
+  height: auto;
+  padding-left: 20px;
+  padding-top: 20px;
+}
+
+.nav-li-info {
+  display: flex;
+  flex-direction: column;
+  padding: 0;
+  padding-bottom: 20px;
+}
+
+.nav-li-info li {
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 500;
+  color: #7C8493;
+  font-size: 0.9rem; /* Responsive font size */
+  cursor: pointer;
+}
+
+.nav-li-info li:hover {
+  background-color: #E9EBFD;
+}
+
+.setting {
+  margin-top: 30px;
+}
+
+.setting-nav {
+  margin-top: 20px;
+}
+
+.profile {
+  margin-top: 80px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 17px;
+  padding-bottom: 20px;
+}
+
+.profile-img {
+  width: 25%;
+  height: auto;
+  padding: 0;
+  margin: 0;
+}
+
+.profile-detail {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  justify-content: center;
+  gap: 10px;
+}
+
+.name {
+  color: #202430;
+  font-size: 1.0625rem; /* Responsive font size */
+  padding: 0;
+  margin: 0;
+}
+
+.email1 {
+  font-size: 0.75rem; /* Responsive font size */
+  padding: 0;
+  margin: 0;
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  background-color: #F8F8FD;
+  border: 2px solid #CCCCF5;
+  border-radius: 50%;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  z-index: 10; /* Ensure it's on top */
+  transition: left 0.3s;
+}
+
+.hamburger.open {
+  left: calc(18% + 15px); /* Move right when menu is open */
+}
+
+.hamburger-icon {
+  width: 20px;
+  height: 2px;
+  background-color: #333;
+  display: block;
+  margin: 4px 0;
+  transition: all 0.3s; /* Smooth transition for icon lines */
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  .nav-li, .nav-li-info li {
+    font-size: 0.9375rem; /* 15px */
+  }
+  .name {
+    font-size: 1rem; /* 16px */
+  }
+  .email1 {
+    font-size: 0.6875rem; /* 11px */
+  }
+}
+
+@media (max-width: 992px) {
+  .nav-li, .nav-li-info li {
+    font-size: 0.875rem; /* 14px */
+  }
+  .name {
+    font-size: 0.9375rem; /* 15px */
+  }
+  .email1 {
+    font-size: 0.625rem; /* 10px */
+  }
+}
+
+@media (max-width: 768px) {
+  .nav1 {
+    width: 60%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(248, 248, 253, 0.95); /* Slightly transparent background */
+    z-index: 1000;
+    display: none; /* Hide navigation items by default */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Light shadow for navigation */
+  }
+
+  .nav1.open {
+    display: block; /* Show navigation items when menu is open */
+  }
+
+  .hamburger {
+    display: flex;
+  }
+
+  .profile {
+    position: absolute;
+    bottom: 10px;
+    width: 90%;
+    padding-bottom: 10px;
+    margin-left: 10px;
+  }
+
+  .second-section {
+    padding-top: 60px; /* Ensure content is not covered by fixed header */
+  }
+
+  .nav-li, .nav-li-info li {
+    font-size: 0.8125rem; /* 13px */
+  }
+  .name {
+    font-size: 0.875rem; /* 14px */
+  }
+  .email1 {
+    font-size: 0.5625rem; /* 9px */
+  }
+}
+
+@media (max-width: 576px) {
+  .nav-li, .nav-li-info li {
+    font-size: 0.75rem; /* 12px */
+  }
+  .name {
+    font-size: 0.8125rem; /* 13px */
+  }
+  .email1 {
+    font-size: 0.5rem; /* 8px */
+  }
+}

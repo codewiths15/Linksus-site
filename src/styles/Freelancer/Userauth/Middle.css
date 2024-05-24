@@ -1,0 +1,77 @@
+.google {
+    width: 65%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    font-family: "Epilogue", sans-serif;
+    font-weight: 600;
+    color: #0175C4;
+    font-size: 24px;
+    background: none;
+    border: 1px solid #CCCCF5;
+    margin-top: 25px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+    /* Adding transition for background-color and color */
+}
+
+.google:hover {
+    background-color: #0175C4;
+    /* Change background color on hover */
+    color: white;
+    /* Change font color on hover */
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 65%;
+    gap: 15px;
+    font-family: "Epilogue", sans-serif;
+    color: #a2a2a2;
+    margin-top: 18px;
+}
+
+.line {
+    width: 32%;
+    height: 2px;
+    background-color: #a2a2a2;
+
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+   
+    .google {
+        width: 100%;
+        font-size: 18px;
+        /* Adjust the font size for smaller screens */
+    }
+
+    .email {
+        width: 100%;
+    }
+
+   
+
+}
+
+/* Media query for even smaller screens */
+@media only screen and (max-width: 480px) {
+   
+    .google {
+        font-size: 16px;
+        /* Further adjust the font size for even smaller screens */
+    }
+
+    .email {
+        font-size: 15px;
+    }
+
+}

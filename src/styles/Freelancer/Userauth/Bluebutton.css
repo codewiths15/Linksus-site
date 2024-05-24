@@ -1,0 +1,33 @@
+.continue{
+    width: 65%;
+    background: none;
+    border: none;
+    background-color: #0175C4;
+    padding: 20px 0px;
+    font-family: "Epilogue", sans-serif;
+    font-size: 17px;
+    color: white;
+    font-weight: 600;
+    margin-top: 30px;
+    cursor: pointer;
+}
+
+.continue:hover{
+    background-color: #0176c4ec;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+    .continue{
+        width: 100%;
+    }
+    
+   
+
+}
+
+/* Media query for even smaller screens */
+@media only screen and (max-width: 480px) {
+   
+
+}

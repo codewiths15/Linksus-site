@@ -1,0 +1,211 @@
+/* Task.css */
+
+/* Base font size for the root element */
+html {
+  font-size: 16px; /* 1rem = 16px */
+}
+
+@media (max-width: 1200px) {
+  html {
+    font-size: 15px; /* Decrease base font size for smaller screens */
+  }
+}
+
+@media (max-width: 992px) {
+  html {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 768px) {
+  html {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+.main2 {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.second-section {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+ align-items: center;
+}
+
+.search {
+  width: 87%;
+  height: 70px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 10px 30px;
+  margin-top: 30px;
+  border: 2px solid #E9E9E9;
+  border-radius: 50px;
+  gap: 20px;
+  box-shadow: 0 0 30px rgba(40, 40, 40, 0.1);
+}
+
+.search1 {
+  height: 40%;
+}
+
+.search input {
+  border: none; /* Remove all borders */
+  border-bottom: 2px solid #D6DDEB; /* Add bottom border with custom color */
+  padding: 0.3125rem 0.625rem; /* Adjust padding using rem */
+  font-size: 1rem; /* 16px by default, adjusts with html font size */
+  outline: none; /* Remove default focus outline */
+  transition: border-color 0.3s; /* Smooth transition for border color */
+  width: 82%;
+  color: #7C8493;
+  font-family: "Epilogue", sans-serif;
+
+}
+
+.search input:focus {
+  border-bottom-color: #D6DDEB; /* Change border color on focus */
+}
+
+.search button {
+  width: 10%;
+  border-radius: 20px;
+  height: 60%;
+  border: none;
+  background: none;
+  background-color: #0175C4;
+  color: white;
+  cursor: pointer;
+  font-size: 0.9rem; /* Responsive font size */
+  font-weight: 500;
+  font-family: "Epilogue", sans-serif;
+
+}
+
+.task-find{
+  display: flex;
+  flex-direction: row;
+  width: 87%;
+  justify-content: space-between;
+ margin-top: 60px;
+}
+
+.checkboxes{
+  display: flex;
+  flex-direction: column;
+ width: 30%;
+}
+
+/* Media query adjustments for the search bar height and padding */
+@media (max-width: 768px) {
+  .search {
+    width: 95%;
+    height: 60px;
+    padding: 10px 20px;
+    margin-top: 20px;
+    gap: 15px;
+  }
+
+  .search1 {
+    height: 50%;
+  }
+
+  .search button {
+    width: 15%;
+    font-size: 0.875rem; /* Adjust font size for smaller screens */
+  }
+}
+
+@media (max-width: 576px) {
+  .search {
+    width: 100%;
+    height: 50px;
+    padding: 10px 15px;
+    margin-top: 15px;
+    gap: 10px;
+  }
+
+  .search1 {
+    height: 60%;
+  }
+
+  .search button {
+    width: 20%;
+    font-size: 0.75rem; /* Adjust font size for smaller screens */
+  }
+}
+
+/* Hamburger Menu Styles */
+.hamburger {
+  display: none;
+  position: fixed;
+  top: 15px;
+  left: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  z-index: 1001; /* Ensure it's on top */
+  transition: left 0.3s ease-in-out; /* Smooth transition for position */
+}
+
+.hamburger.open {
+  left: 55%; /* Move to the right of the navigation when open */
+}
+
+.hamburger-icon {
+  width: 25px;
+  height: 3px;
+  background-color: #333;
+  display: block;
+  margin: 5px 0;
+  transition: all 0.3s; /* Smooth transition for icon lines */
+}
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav1 {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 50%;
+    height: 100%;
+    background-color: #F8F8FD;
+    z-index: 1000;
+    transform: translateX(-100%); /* Hide by default */
+    transition: transform 0.3s; /* Smooth slide-in transition */
+    box-shadow: 0 0 15px rgba(40, 40, 40, 0); /* No shadow by default */
+  }
+
+  .nav1.open {
+    transform: translateX(0); /* Slide in */
+    box-shadow: 0 0 15px rgba(40, 40, 40, 0.2); /* Add shadow when open */
+  }
+
+  .second-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .main2.menu-open .second-section {
+    margin-left: 0;
+  }
+}
