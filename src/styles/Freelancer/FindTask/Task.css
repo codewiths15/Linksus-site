@@ -2,12 +2,14 @@
 
 /* Base font size for the root element */
 html {
-  font-size: 16px; /* 1rem = 16px */
+  font-size: 16px;
+  /* 1rem = 16px */
 }
 
 @media (max-width: 1200px) {
   html {
-    font-size: 15px; /* Decrease base font size for smaller screens */
+    font-size: 15px;
+    /* Decrease base font size for smaller screens */
   }
 }
 
@@ -29,11 +31,15 @@ html {
   }
 }
 
+body {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
 .main2 {
   width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
+  height: 100vh;
   display: flex;
   flex-direction: row;
   position: relative;
@@ -43,7 +49,17 @@ html {
   width: 100%;
   display: flex;
   flex-direction: column;
- align-items: center;
+  align-items: center;
+  overflow: hidden;
+  margin-top: 25px;
+}
+
+.search-container {
+  position: sticky;
+  top: 0;
+  width: 100%;
+  background-color: white;
+  z-index: 1000;
 }
 
 .search {
@@ -53,11 +69,13 @@ html {
   flex-direction: row;
   align-items: center;
   padding: 10px 30px;
-  margin-top: 30px;
+  margin: 0 auto;
   border: 2px solid #E9E9E9;
   border-radius: 50px;
   gap: 20px;
   box-shadow: 0 0 30px rgba(40, 40, 40, 0.1);
+  margin: 10px 0;
+  /* Added margin for the search bar */
 }
 
 .search1 {
@@ -65,20 +83,19 @@ html {
 }
 
 .search input {
-  border: none; /* Remove all borders */
-  border-bottom: 2px solid #D6DDEB; /* Add bottom border with custom color */
-  padding: 0.3125rem 0.625rem; /* Adjust padding using rem */
-  font-size: 1rem; /* 16px by default, adjusts with html font size */
-  outline: none; /* Remove default focus outline */
-  transition: border-color 0.3s; /* Smooth transition for border color */
+  border: none;
+  border-bottom: 2px solid #D6DDEB;
+  padding: 0.3125rem 0.625rem;
+  font-size: 1rem;
+  outline: none;
+  transition: border-color 0.3s;
   width: 82%;
   color: #7C8493;
   font-family: "Epilogue", sans-serif;
-
 }
 
 .search input:focus {
-  border-bottom-color: #D6DDEB; /* Change border color on focus */
+  border-bottom-color: #D6DDEB;
 }
 
 .search button {
@@ -90,33 +107,57 @@ html {
   background-color: #0175C4;
   color: white;
   cursor: pointer;
-  font-size: 0.9rem; /* Responsive font size */
+  font-size: 0.9rem;
   font-weight: 500;
   font-family: "Epilogue", sans-serif;
-
 }
 
-.task-find{
+.task-find-container {
+  position: sticky;
+  top: 110px;
+  /* Height of the search bar + margin */
+  width: 100%;
+  background-color: white;
+  z-index: 999;
+}
+
+.task-find {
   display: flex;
   flex-direction: row;
   width: 87%;
+  margin: 0 auto;
   justify-content: space-between;
- margin-top: 60px;
+  padding: 20px 0;
 }
 
-.checkboxes{
+.checkboxes {
   display: flex;
   flex-direction: column;
- width: 30%;
+  width: 25%;
+}
+
+.all-tasks {
+  width: 75%;
+  height: calc(100vh - 170px);
+  /* Full height minus the height of sticky elements and margins */
+  overflow-y: auto;
+  scrollbar-width: none;
+  /* Hide scrollbar in Firefox */
+  -ms-overflow-style: none;
+  /* Hide scrollbar in IE and Edge */
+}
+
+.all-tasks::-webkit-scrollbar {
+  display: none;
+  /* Hide scrollbar in Chrome, Safari */
 }
 
 /* Media query adjustments for the search bar height and padding */
 @media (max-width: 768px) {
   .search {
-    width: 95%;
+    width: 88%;
     height: 60px;
     padding: 10px 20px;
-    margin-top: 20px;
     gap: 15px;
   }
 
@@ -126,16 +167,15 @@ html {
 
   .search button {
     width: 15%;
-    font-size: 0.875rem; /* Adjust font size for smaller screens */
+    font-size: 0.875rem;
   }
 }
 
 @media (max-width: 576px) {
   .search {
-    width: 100%;
+    width: 88%;
     height: 50px;
     padding: 10px 15px;
-    margin-top: 15px;
     gap: 10px;
   }
 
@@ -145,7 +185,7 @@ html {
 
   .search button {
     width: 20%;
-    font-size: 0.75rem; /* Adjust font size for smaller screens */
+    font-size: 0.75rem;
   }
 }
 
@@ -158,12 +198,12 @@ html {
   background: none;
   border: none;
   cursor: pointer;
-  z-index: 1001; /* Ensure it's on top */
-  transition: left 0.3s ease-in-out; /* Smooth transition for position */
+  z-index: 1001;
+  transition: left 0.3s ease-in-out;
 }
 
 .hamburger.open {
-  left: 55%; /* Move to the right of the navigation when open */
+  left: 55%;
 }
 
 .hamburger-icon {
@@ -172,7 +212,7 @@ html {
   background-color: #333;
   display: block;
   margin: 5px 0;
-  transition: all 0.3s; /* Smooth transition for icon lines */
+  transition: all 0.3s;
 }
 
 @media (max-width: 768px) {
@@ -188,24 +228,33 @@ html {
     height: 100%;
     background-color: #F8F8FD;
     z-index: 1000;
-    transform: translateX(-100%); /* Hide by default */
-    transition: transform 0.3s; /* Smooth slide-in transition */
-    box-shadow: 0 0 15px rgba(40, 40, 40, 0); /* No shadow by default */
+    transform: translateX(-100%);
+    transition: transform 0.3s;
+    box-shadow: 0 0 15px rgba(40, 40, 40, 0);
   }
 
   .nav1.open {
-    transform: translateX(0); /* Slide in */
-    box-shadow: 0 0 15px rgba(40, 40, 40, 0.2); /* Add shadow when open */
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(40, 40, 40, 0.2);
   }
 
   .second-section {
     width: 100%;
     display: flex;
-    flex-direction: row;
     justify-content: center;
   }
 
   .main2.menu-open .second-section {
     margin-left: 0;
+  }
+
+  .checkboxes{
+    display: none;
+  }
+
+  .task-find {
+   width: 100%;
+  justify-content: center;
+    
   }
 }

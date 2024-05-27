@@ -1,0 +1,101 @@
+.profile12 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border: 1px solid #D6DDEB;
+    padding: 20px;
+    gap: 20px;
+    border-radius: 16px;
+    margin-top: 20px;
+
+}
+
+.about {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    font-size: 16px;
+    font-weight: 600;
+    color: #25324B;
+
+    
+}
+
+.about img{
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.about-me{
+    font-size: 13px;
+    line-height: 17px;
+    color: #515B6F;
+}
+/* Media Queries for Responsiveness */
+
+@media (max-width: 992px) {
+    .second-section1 {
+        padding: 30px 10px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .profile1 {
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .profile11 {
+        width: 80%;
+        height: auto;
+
+    }
+
+    .profile12 {
+        width: 80%;
+        height: auto;
+
+    }
+
+
+    .profile11 img,
+    .profile-photo {
+        max-width: 60%;
+        max-height: 80px;
+        /* Adjust image height */
+    }
+
+    .loc img,
+    .openfor img {
+        width: 21px;
+        /* Adjust image size */
+        height: 22px;
+        /* Adjust image size */
+    }
+
+    .openfor {
+        min-width: 180px;
+    }
+
+    .edit {
+        margin-left: 20px;
+    }
+}
+
+@media (max-width: 576px) {
+    
+    .profile11 {
+        width: 80%;
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+
+    }
+    /* Adjust other content sizes to fit within profile1 box */
+    
+}
