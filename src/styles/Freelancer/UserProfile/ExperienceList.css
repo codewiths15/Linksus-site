@@ -1,0 +1,96 @@
+/* ExperienceList.css */
+.experience-list {
+  border: 1px solid #D6DDEB;
+  padding: 20px;
+  border-radius: 16px;
+  margin-top: 20px;
+  width: 100%;
+}
+
+.experience-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.experience-header h2 {
+  margin: 0;
+  font-size: 20px;
+  color: #25324B;
+}
+
+.experience-add {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.experience-add h2{
+margin: 0;
+font-size: 16px;
+color: #25324B;
+}
+
+.experience-add img {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+
+.more-button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.show-more {
+  background: none;
+  border: none;
+  color: #0175C4;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+@media (max-width: 992px) {
+  .experience-list {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .experience-header h2 {
+    font-size: 18px;
+  }
+
+  .experience-add img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .show-more {
+    font-size: 13px;
+  }
+}
+
+@media (max-width: 576px) {
+  .experience-list {
+    width: 80%;
+    padding: 15px;
+  }
+
+  .experience-header h2 {
+    font-size: 16px;
+  }
+
+  .experience-add img {
+    width: 25px;
+    height: 25px;
+  }
+
+  .show-more {
+    font-size: 12px;
+  }
+}

@@ -1,0 +1,21 @@
+/* SkillsList.css */
+.skill-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  
+  .skill2 {
+    display: inline-block;
+    background-color: #f8f8fd;
+    color: #0175c4;
+    padding: 5px 10px;
+    border-radius: 10px;
+    font-size: 0.8rem;
+    margin-right: 5px;
+    margin-bottom: 5px;
+  }
+
+  .skill1 h3{
+    font-size: 16px;
+    color: #25324B;
+  }

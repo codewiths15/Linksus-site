@@ -22,9 +22,14 @@
     
 }
 
+.about p{
+    margin: 0;
+    font-weight: 600;
+}
+
 .about img{
-    width: 40px;
-    height: 40px;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
 }
 
@@ -32,6 +37,7 @@
     font-size: 13px;
     line-height: 17px;
     color: #515B6F;
+    margin: 0;
 }
 /* Media Queries for Responsiveness */
 
