@@ -15,13 +15,13 @@ const JobItem = ({
   const appliedPercentage = (applied / capacity) * 100;
 
   return (
-    <div className="job-item">
+    <div className="job-item1">
       <div className="job-info">
-        <div className="job-header">
+        <div className="job-header1">
           <img src={company1} alt="Company Logo" className="company-logo" />
-          <div className="job-details">
-            <h3 className="job-title">{title}</h3>
-            <p className="job-company">
+          <div className="job-details1">
+            <h3 className="job-title1">{title}</h3>
+            <p className="job-company1">
               {company} · {level}
             </p>
           </div>
@@ -35,7 +35,7 @@ const JobItem = ({
           ))}
         </div>
       </div>
-      <div className="apply-section">
+      <div className="apply-section1">
         <button className="apply-button">Apply</button>
         <div className="capacity-bar">
           <div

@@ -69,7 +69,7 @@ function Descript() {
               niceToHaves={jobs[0].niceToHaves}
             />
           </div>
-          <div className="about">
+          <div className="about1">
             <TaskDetails />
           </div>
         </div>

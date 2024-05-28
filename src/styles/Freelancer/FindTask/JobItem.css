@@ -1,5 +1,5 @@
 /* JobItem.css */
-.job-item {
+.job-item1 {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -10,7 +10,7 @@
   font-family: "Epilogue", sans-serif;
 }
 
-.job-header {
+.job-header1 {
   display: flex;
   align-items: center;
 }
@@ -21,18 +21,18 @@
   margin-right: 15px;
 }
 
-.job-details {
+.job-details1 {
   display: flex;
   flex-direction: column;
 }
 
-.job-title {
+.job-title1 {
   font-size: 1rem;
   font-weight: 600;
   margin: 0;
 }
 
-.job-company {
+.job-company1 {
   font-size: 0.8rem;
   color: #7C8493;
 }
@@ -67,7 +67,7 @@
   color: #0175C4;
 }
 
-.apply-section {
+.apply-section1 {
   display: flex;
   flex-direction: column;
   align-items: center;

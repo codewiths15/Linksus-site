@@ -7,7 +7,7 @@ import Bluebutton from "./Bluebutton";
 import Last from "./Last";
 function Login() {
   return (
-    <div className="main">
+    <div className="main4">
       <Header />
       <Title title="Welcome back" />
       <Middle text="Login with Google" text2="Or login with email" />

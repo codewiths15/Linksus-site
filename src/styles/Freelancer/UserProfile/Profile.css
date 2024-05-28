@@ -1,17 +1,11 @@
 /* Profile.css */
 
-body {
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    font-family: "Epilogue", sans-serif;
-}
-
 .main2 {
     height: 100vh;
     display: flex;
     flex-direction: row;
     position: relative;
+    font-family: "Epilogue", sans-serif;
 }
 
 .second-section1 {
