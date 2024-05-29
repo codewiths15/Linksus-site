@@ -1,6 +1,6 @@
 // import Login from "./components/Freelancer/Userauth/Login";
-import './App.css'
-// import Signup from "./components/Freelancer/Userauth/Signup";
+import "./App.css";
+ import Signup from "./components/Freelancer/Userauth/Signup";
 // import Navigation from "./components/Freelancer/Sidebar/Navigation";
 // import Task from "./components/Freelancer/FindTask/Task";
 // import Checkbox from "./components/Freelancer/FindTask/Checkbox";
@@ -13,16 +13,16 @@ import Main from "./components/Freelancer/Main";
 function App() {
   return (
     <div className="App">
-     {/* <Login/>  */}
+      {/* <Login/>  */}
 
-    {/* <Signup/>   */}
-    {/* <Navigation/> */}
-     {/* <Task/> */}
-     {/* <Descript/> */}
-     {/* <Apply/> */}
-     {/* <History/> */}
-     {/* <Profile/> */}
-     <Main/>
+      {/* <Signup /> */}
+      {/* <Navigation/> */}
+      {/* <Task/> */}
+      {/* <Descript/> */}
+      {/* <Apply/> */}
+      {/* <History/> */}
+      {/* <Profile/> */}
+      <Main/>
     </div>
   );
 }

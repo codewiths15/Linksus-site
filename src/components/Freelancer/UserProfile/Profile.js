@@ -75,17 +75,7 @@ function Profile() {
   ];
 
   return (
-    <div className={`main2 ${menuOpen ? "menu-open" : ""}`}>
-      <Navigation menuOpen={menuOpen} />
-      <button
-        className={`hamburger ${menuOpen ? "open" : ""}`}
-        onClick={toggleMenu}
-      >
-        <span className="hamburger-icon"></span>
-        <span className="hamburger-icon"></span>
-        <span className="hamburger-icon"></span>
-      </button>
-      <div className="second-section1">
+      <div className="second-section-profile">
         <div className="profile1">
           <Profile11 profileData={profileData} />
           <Profile12 profileData={profileData} />
@@ -119,7 +109,6 @@ function Profile() {
           </div>
         </div>
       </div>
-    </div>
   );
 }
 
