@@ -8,7 +8,6 @@ import POW from "./../../../assests/images/pow.png"; // Make sure the path is co
 import Logo from "./../../../assests/images/company1.png"; // Add the path for the company logo
 import Logo1 from "./../../../assests/images/company2.png"; // Add the path for the company logo
 
-
 const data = [
   {
     logo: Logo,
@@ -41,27 +40,16 @@ function History() {
   };
 
   return (
-    <div className={`main2 ${menuOpen ? "menu-open" : ""}`}>
-      <Navigation menuOpen={menuOpen} />
-      <button
-        className={`hamburger ${menuOpen ? "open" : ""}`}
-        onClick={toggleMenu}
-      >
-        <span className="hamburger-icon"></span>
-        <span className="hamburger-icon"></span>
-        <span className="hamburger-icon"></span>
-      </button>
-      <div className="second-section">
-        <div className="history-section">
-          <p className="app-history">Application History</p>
-          <button className="pow">
-            <img src={POW} alt="POW Generator" />
-            POW Generator
-          </button>
-        </div>
-        <HistorySection data={data} />
+    <>
+      <div className="history-section">
+        <p className="app-history">Application History</p>
+        <button className="pow">
+          <img src={POW} alt="POW Generator" />
+          POW Generator
+        </button>
       </div>
-    </div>
+      <HistorySection data={data} />
+    </>
   );
 }
 

@@ -1,14 +1,10 @@
-body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-}
 
 .main2 {
   height: 100vh;
   display: flex;
   flex-direction: row;
   position: relative;
+  overflow: hidden;
 }
 
 .second-section {
@@ -137,19 +133,19 @@ body {
   scrollbar-width: none;  /* Firefox */
 }
 
-.about {
+.about1 {
   width: 30%; /* Adjust width as needed */
   height: 100%; /* Ensure it takes full height of task-brief */
   overflow-y: auto; /* Allow vertical scrolling */
 }
 
 /* Hide scrollbar */
-.about::-webkit-scrollbar {
+.about1::-webkit-scrollbar {
   width: 0px;
   background: transparent; /* Optional: make scrollbar track transparent */
 }
 
-.about {
+.about1 {
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
 }
@@ -229,7 +225,7 @@ body {
   }
 
   .des,
-  .about {
+  .about1 {
     width: 100%;
     height: auto;
     overflow-y: visible; /* Disable independent scrolling */

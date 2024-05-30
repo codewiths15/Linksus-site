@@ -2,10 +2,9 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    height: 25%;
     border: 1px solid #D6DDEB;
     padding: 20px;
-    gap: 20px;
+    gap: 14px;
     border-radius: 16px;
 }
 
@@ -48,7 +47,6 @@
 }
 
 .openfor {
-    width: 95%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -60,9 +58,14 @@
     font-weight: 600;
 }
 
+.openfor p{
+    margin: 0;
+    font-size: 11px;
+
+}
 .openfor img {
-    height: 30px;
-    width: 30px;
+    height: 20px;
+    width: 20px;
 }
 
 .position {
@@ -90,6 +93,23 @@
     white-space: nowrap;
     margin-left: 40px;
     cursor: pointer;
+}
+
+@media (max-width: 1080px) {
+   .edit{
+    margin-left: 20px;
+   }
+
+   .openfor p{
+    font-size: 8px;
+
+}
+.openfor img {
+    height: 15px;
+    width: 15px;
+}
+
+   
 }
 
 

@@ -1,7 +1,4 @@
 body {
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
   font-family: "Epilogue", sans-serif;
 }
 
@@ -10,6 +7,7 @@ body {
   display: flex;
   flex-direction: row;
   position: relative;
+  overflow: hidden;
 }
 
 .second-section {
@@ -21,7 +19,7 @@ body {
 }
 
 .apply-section {
-  width: 87%;
+  padding: 20px 30px;
   display: flex;
   flex-direction: column;
   height: 100%;

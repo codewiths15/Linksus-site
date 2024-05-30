@@ -8,7 +8,7 @@ import Last from "./Last";
 
 function Signup() {
   return (
-    <div className="main">
+    <div className="main4">
      <Header/>
      <Title title="Get more opportunities "/>
      <Middle text="Sign Up with Google" text2="Or sign up with email"/>

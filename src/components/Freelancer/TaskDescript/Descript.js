@@ -21,60 +21,50 @@ function Descript() {
       location: "Paris, France",
       type: "Full-Time",
       logo: Logo,
-      description: "Stripe is looking for Social Media Marketing expert to help manage our online networks. You will be responsible for monitoring our social media channels, creating content, finding effective ways to engage the community and incentivize others to engage on our channels.",
+      description:
+        "Stripe is looking for Social Media Marketing expert to help manage our online networks. You will be responsible for monitoring our social media channels, creating content, finding effective ways to engage the community and incentivize others to engage on our channels.",
       responsibilities: [
         "Community engagement to ensure that is supported and actually represented online",
         "Focus on social media content development and publication",
         "Marketing and strategy support",
         "Stay on top of trends on social media platforms, and suggest content ideas to the team",
-        "Engage with online communities"
+        "Engage with online communities",
       ],
       whoYouAre: [
         "You get energy from people and building the ideal work environment",
         "You have a sense for beautiful spaces and office experiences",
         "You are a confident office manager, ready for added responsibilities",
         "You're detail-oriented and creative",
-        "You're a growth marketer and know how to run campaigns"
+        "You're a growth marketer and know how to run campaigns",
       ],
       niceToHaves: [
         "Fluent in English",
         "Project management skills",
-        "Copy editing skills"
-      ]
+        "Copy editing skills",
+      ],
     },
     // Add more job objects here if needed
   ];
 
   return (
-    <div className={`main2 ${menuOpen ? "menu-open" : ""}`}>
-      <Navigation menuOpen={menuOpen} />
-      <button
-        className={`hamburger ${menuOpen ? "open" : ""}`}
-        onClick={toggleMenu}
-      >
-        <span className="hamburger-icon"></span>
-        <span className="hamburger-icon"></span>
-        <span className="hamburger-icon"></span>
-      </button>
-      <div className="second-section">
-        {jobs.map((job, index) => (
-          <JobItem key={index} job={job} />
-        ))}
-        <div className="task-brief">
-          <div className="des">
-            <JobDescription 
-              description={jobs[0].description}
-              responsibilities={jobs[0].responsibilities}
-              whoYouAre={jobs[0].whoYouAre}
-              niceToHaves={jobs[0].niceToHaves}
-            />
-          </div>
-          <div className="about">
-            <TaskDetails />
-          </div>
+    <>
+      {jobs.map((job, index) => (
+        <JobItem key={index} job={job} />
+      ))}
+      <div className="task-brief">
+        <div className="des">
+          <JobDescription
+            description={jobs[0].description}
+            responsibilities={jobs[0].responsibilities}
+            whoYouAre={jobs[0].whoYouAre}
+            niceToHaves={jobs[0].niceToHaves}
+          />
+        </div>
+        <div className="about1">
+          <TaskDetails />
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

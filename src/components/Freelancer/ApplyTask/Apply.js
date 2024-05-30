@@ -12,25 +12,14 @@ function Apply() {
   };
 
   return (
-    <div className={`main2 ${menuOpen ? "menu-open" : ""}`}>
-      <Navigation menuOpen={menuOpen} />
-      <button
-        className={`hamburger ${menuOpen ? "open" : ""}`}
-        onClick={toggleMenu}
-      >
-        <span className="hamburger-icon"></span>
-        <span className="hamburger-icon"></span>
-        <span className="hamburger-icon"></span>
-      </button>
-      <div className="second-section">
-        <div className="apply-section">
-          <TitleLogo />
-          <div className="form-wrapper">
-            <ApplicationForm />
-          </div>
+    <>
+      <div className="apply-section">
+        <TitleLogo />
+        <div className="form-wrapper">
+          <ApplicationForm />
         </div>
       </div>
-    </div>
+    </>
   );
 }
 

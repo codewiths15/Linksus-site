@@ -16,6 +16,7 @@ import PostTask from "./components/Company/PostTask/PostTask";
 function App() {
   return (
     <div className="App">
+
       {/* <PostTask /> */}
     <TaskListing />
     {/* <Login/>  */}
@@ -28,6 +29,7 @@ function App() {
     {/* <Apply/> */}
     {/* <History/> */}
     {/* <Profile/> */}
+
     </div>
   );
 }
