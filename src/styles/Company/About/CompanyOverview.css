@@ -1,0 +1,95 @@
+@media (orientation: landscape) and (min-width: 768px) {  
+      .profileHeader {
+        display: flex;
+        align-items: center;
+        margin-bottom: 20px;
+        padding-bottom: 16px;
+        border-bottom: solid #DDDDDD 1px;
+        border-top: solid #DDDDDD 1px;
+      }
+      
+      .companyTitleBar {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding-right: 36px;
+      }
+
+      .companyLogo {
+        width: 100px;
+        height: 100px;
+        margin-right: 20px;
+      }
+
+      .editProfBtn {
+        padding: 10px 10px 10px 16px;
+        border-radius: 12px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #fff;
+        border: solid #CCCCF5 1px;
+        margin-left: 10px ;
+    }
+    .editProfText {
+        font-size: 15px;
+        margin-bottom: 12px;
+        color: #0175C4;
+        margin: 0px 8px;
+        font-weight: bold;
+      }
+      
+      .companyInfoContainer {
+        display: flex;
+        flex-direction: row;
+        margin-top: 8px;
+      }
+
+      .infoContainerSingle {
+        width: 25%;
+        align-items: center;
+        display: flex;
+        flex-direction: row;
+        padding: 2px 4px;
+      }
+
+      .iconOutline {
+        border: solid #D6DDEB 2px;
+        border-radius: 25px;
+        padding: 4px;
+      }
+
+      .infoContainerText {
+        margin-left: 10px;
+      }
+
+      .companyInfo {
+        flex-grow: 1;
+      }
+      
+      .companyName {
+        font-size: 36px;
+        margin-bottom: 12px;
+        color: #25324B;
+      }
+
+      .companyWebsite {
+        color: #0175C4;
+        text-decoration: none;
+        font-weight: bold;
+      }
+      
+      .companyDetails {
+        margin: 6px 0;
+      }
+
+      .editBtnAbsolute {
+        position: absolute;
+        background-color: #fff;
+        border: solid #D6DDEB 1px;
+        padding: 3px;
+        margin: 0px 4px;
+        
+      }
+}
