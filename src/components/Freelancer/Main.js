@@ -6,6 +6,7 @@ import Task from "./FindTask/Task";
 import Descript from "./TaskDescript/Descript";
 import Profile from "./UserProfile/Profile";
 import Navigation from "./Sidebar/Navigation";
+import Dashboard from "./Dashboard/Dashboard";
 // import "./../../../styles/Freelancer/Sidebar/Navigation.css"; // Make sure to import the styles
 
 function Main() {
@@ -34,6 +35,7 @@ function Main() {
             <Route path="/task" element={<Task />} />
             <Route path="/descript" element={<Descript />} />
             <Route path="/profile" element={<Profile />} />
+            <Route path="/dashboard" element={<Dashboard />} />
             <Route path="/" element={<Task />} /> {/* Default Route */}
           </Routes>
         </div>
