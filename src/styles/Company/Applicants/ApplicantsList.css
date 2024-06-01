@@ -1,0 +1,25 @@
+@media (orientation: landscape) and (min-width: 768px) {
+    .al-container {
+        border: 1px solid #D6DDEB;
+        padding: 12px;
+    }
+
+    .al-title-container {
+        border: 1px solid #D6DDEB;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin-bottom: 16px;
+    }
+
+    .al-content-container {
+        padding: 12px 8px;
+    }
+
+    .al-p-highlight {
+        background-color: #E9EBFD;
+        padding: 6px;
+    }
+}

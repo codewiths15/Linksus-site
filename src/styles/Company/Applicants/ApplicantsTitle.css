@@ -1,0 +1,27 @@
+@media (orientation: landscape) and (min-width: 768px) {
+    .applicantsTitleContainer {
+        /* border: solid black 1px; */
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 16px 4px;
+    }
+
+    .at-title {
+        margin: 0px;
+        color: #25324B;
+    }
+
+    .at-text-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        /* border: solid black 1px; */
+        margin-top: 8px;
+    }
+
+    .at-p {
+        margin: 0px 4px;
+        color: #25324B;
+    }
+}
