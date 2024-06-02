@@ -43,7 +43,7 @@
         text-decoration: none;
       }
 
-    .titleBar{
+    .cp-titleBar{
     display: flex;
     justify-content: space-between;
     align-items: center; 

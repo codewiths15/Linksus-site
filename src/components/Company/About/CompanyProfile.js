@@ -9,7 +9,7 @@ const CompanyProfile = () => {
     <div className='compProfileContainer'>
       <div className='profileContainer'>
             <div className='profileTextContainer'>
-                <div className='titleBar'>
+                <div className='cp-titleBar'>
                   <h2>Company Profile</h2>
                       <button className="editBtn" onClick={()=>{}}>
                           <TbEdit size={20} color='#0175C4' />
@@ -20,7 +20,7 @@ const CompanyProfile = () => {
                 </p>
               </div>
             <div className='techStack'>
-              <div className='titleBar'>
+              <div className='cp-titleBar'>
                 <h2>Tech Stack</h2>
                 <div>
                     <button className="editBtn" onClick={()=>{}}>

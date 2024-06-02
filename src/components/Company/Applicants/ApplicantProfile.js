@@ -6,7 +6,7 @@ const ApplicantProfile = ({pfp, name, profileLink, appliedOn, score}) => {
   return (
     <div className='ap-container'>
       <div className='ap-top-container'>
-        <img alt="profile" src='/sample_user.png' className='user-pfp'/>
+        <img alt="profile" src='/sample_user.png' className='user-pfp'/>  {/*change to profile link of user instead of dummy*/}
         <div>
             <p style={{fontWeight: '600'}}>{name}</p>
             <a href={profileLink} style={{color: "#0175C4"}}>
