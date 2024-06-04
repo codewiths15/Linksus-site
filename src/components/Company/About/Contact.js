@@ -11,7 +11,7 @@ import { FaPlus } from "react-icons/fa6";
 const Contact = () => {
   return (
     <div className='contact'>
-        <div className='titleBar'>
+        <div className='ct-titleBar'>
             <h2>Contact</h2>
             <div>
                 <button className="editBtn" onClick={()=>{}}>

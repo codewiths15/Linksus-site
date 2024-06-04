@@ -8,9 +8,9 @@ import Contact from './Contact';
 
 const About = () => {
   return (
-    <div className='container'>
+    <div className='ab-container'>
         <Navigation />
-      <div className='mainContent'>
+      <div className='ab-main-content'>
         <TopNavigation />
         <CompanyOverview />
         <CompanyProfile />

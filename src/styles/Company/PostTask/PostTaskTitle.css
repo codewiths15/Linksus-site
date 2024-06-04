@@ -1,0 +1,53 @@
+@media (orientation: landscape) and (min-width: 768px){
+    .titleBarWithBack {
+        padding: 0px 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    
+    .steps {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .step {
+        text-align: center;
+        padding: 4px 16px;
+        align-items: center;
+        border-radius: 4px;
+        background: #fff;
+        width: 200px;
+        display: flex;
+        flex-direction: row;
+        margin: 0px 12px;
+    }
+
+    .step.active {
+        color: white;
+    }
+    
+    .step.active span.label1{
+        color: #0175C4;
+    }
+    
+    .step.active span.label2 {
+        color: #25324B;
+        font-weight: 500;
+    }
+    
+    .stepSub {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        margin-left: 20px;
+        line-height: 1.5;
+    }
+
+    .postTaskStepsIcons {
+        border-radius: 100px;
+        background-color: #E9EBFD;
+        padding: 12px 12px;
+        color: #7C8493;
+    }
+}

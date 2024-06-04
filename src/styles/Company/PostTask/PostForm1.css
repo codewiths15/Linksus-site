@@ -1,0 +1,176 @@
+@media (orientation: landscape) and (min-width: 768px) {
+    .formSection {
+    margin-bottom: 20px;
+    padding: 4px 20px;
+    }
+
+    .formGroup {
+        margin-bottom: 20px;
+        display: grid;
+        grid-template-columns: 1fr 3fr;
+        padding: 8px 16px;
+        align-items: center;
+        border-bottom: 1px solid #D6DDEB;
+    }
+
+    .formGroup span {
+        display: block;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    .formGroupHorizontal {
+        /* border: solid black 1px; */
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+
+    .formGroupHorizontal2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-left: 128px;
+    }
+
+    .formGroup input.titleInput{
+        width: 250px;
+        height: 25px;
+        padding: 10px;
+        border: 1px solid #D6DDEB;
+    }
+
+    .formGroup input.stipend{
+        width: 150px;
+        height: 25px;
+        padding: 10px;
+        border: transparent;
+    }
+
+    .formGroup input.categories{
+        width: 250px;
+        height: 25px;
+        padding: 10px;
+        border: 1px solid #000;
+        border-radius: 4px;
+    }
+
+    .formGroup select {
+        width: 200px;
+        padding: 10px;
+        border: 1px solid #D6DDEB;
+    }
+
+    .formGroup p {
+        display: block;
+        margin-top: 5px;
+        color: #6c757d;
+        font-size: 14px;
+        line-height: 1.2;
+    }
+
+    .stipendInputContainer {
+        border: 1px solid #D6DDEB;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .taskCategoriesSub2 {
+        /* border: 1px solid black; */
+        height: 100%;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        margin-left: 128px;
+    }
+
+    .dollarSign {
+        border-right: 1px solid #D6DDEB;
+        padding: 2px 12px;
+    }
+
+    .addSkillBtn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 5px 10px;
+        border: 1px #CCCCF5 solid;
+        color: white;
+        cursor: pointer;
+    }
+
+    .formGroup p.addSkillBtnText {
+        margin: 0px 8px;
+        color: #0175C4;
+    }
+
+    .skillsDivider {
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        justify-content: space-between;
+    }
+
+    .skills {
+        margin-top: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+
+    .formGroup p.skillTags {
+        color: #0175C4;
+        align-self: center;
+        margin: 0px;
+    }
+
+    .skillTag {
+        background: #F8F8FD;
+        padding: 4px 8px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin: 0px 8px;
+    }
+
+    .removeSkillBtn {
+        background: none;
+        border: none;
+        cursor: pointer;
+    }
+
+    .step span.label1 {
+        color: #A8ADB7;
+    }
+
+    .step span.label2 {
+        color: #7C8493;
+    }
+
+    .postTaskStepsIconsSelected {
+        border-radius: 100px;
+        background-color: #0175C4;
+        padding: 12px 12px;
+    }
+
+    .nextStepBtn {
+        margin-top: 12px;
+        display: flex;
+        padding: 10px 20px;
+        background: #0175C4;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 14px;
+    }
+    
+    .nextStepBtn:hover {
+        background: #0056b3;
+    }
+
+    .lastPostArea {
+        display: flex;
+        justify-content: flex-end;
+        margin-right: 36px;
+    }
+}

@@ -1,11 +1,11 @@
 @media (orientation: landscape) and (min-width: 768px){
-  .container {
+  .ab-container {
     display: flex;
     flex-direction: row;
     height: 100vh;
   }
 
-  .mainContent {
+  .ab-main-content {
     display: flex;
     flex-direction: column;
     width: 100%;
