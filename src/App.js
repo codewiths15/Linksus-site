@@ -18,7 +18,7 @@ import Applicants from "./components/Company/Applicants/Applicants";
 function App() {
   return (
     <div className="App">
-      <Applicants />
+      {/* <Applicants /> */}
       {/* <Login/>  */}
       {/* <Chat /> */}
       {/* <Signup /> */}
@@ -30,7 +30,7 @@ function App() {
       {/* <Profile/> */}
       {/* <Main/> */}
       {/* <About /> */}
-      {/* <PostTask /> */}
+      <PostTask />
       {/* <TaskListing /> */}
     </div>
   );
