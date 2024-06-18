@@ -1,0 +1,35 @@
+.last{
+    width: 65%;
+    font-family: "Epilogue", sans-serif;
+    font-size: 17px;
+    color: #202430;
+    margin-top: 30px;
+}
+
+a {
+    text-decoration: none; /* Remove underline */
+    color: inherit; /* Set the color to inherit from parent, or specify your desired color */
+}
+
+.last1{
+    text-decoration: none;
+    color:#0175C4;
+    font-weight: 600;
+}
+
+/* Media query for smaller screens */
+@media only screen and (max-width: 768px) {
+   
+    
+    .last{
+        width: 100%;
+        font-size: 15px;
+      
+    }
+
+}
+
+/* Media query for even smaller screens */
+@media only screen and (max-width: 480px) {
+   
+}

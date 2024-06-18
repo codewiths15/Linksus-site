@@ -1,0 +1,44 @@
+.job-description {
+  font-family: "Epilogue", sans-serif;
+  color: #333;
+}
+
+.job-description h3 {
+  font-size: 1.25rem;
+  font-weight: 800;
+  margin-top: 20px;
+}
+
+.job-description p {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-top: 10px;
+}
+
+.job-description ul {
+  list-style-type: none;
+  padding: 0;
+  margin-top: 10px;
+}
+
+.job-description ul li {
+  font-size: 0.8rem;
+  line-height: 1.5;
+  margin-top: 10px;
+  display: flex;
+  align-items: flex-start;
+  background: url('./../../../assests/images/tick.png') no-repeat left center;
+  background-size: 20px 20px;
+  padding-left: 30px;
+}
+
+@media (max-width: 768px) {
+  .job-description h3 {
+    font-size: 1rem;
+  }
+
+  .job-description p,
+  .job-description ul li {
+    font-size: 0.7rem;
+  }
+}

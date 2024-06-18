@@ -1,0 +1,186 @@
+/* JobItem.css */
+.job-item1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px;
+  border: 1px solid #E9E9E9;
+  border-radius: 10px;
+  margin-bottom: 20px;
+  font-family: "Epilogue", sans-serif;
+}
+
+.job-header1 {
+  display: flex;
+  align-items: center;
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px;
+}
+
+.job-details1 {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-title1 {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.job-company1 {
+  font-size: 0.8rem;
+  color: #7C8493;
+}
+
+.job-tags {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 0.8rem;
+}
+
+.salary {
+  background-color: #E0F7FA;
+  color: #56CDAD;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+  opacity: 50;
+  font-weight: 600;
+}
+
+.tag {
+  border: 1px solid #FFB836;
+  color: #FFB836;
+  padding: 5px 10px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.tag.design {
+  border: 1px solid #0175C4;
+  color: #0175C4;
+}
+
+.apply-section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.apply-button {
+  background-color: #0175C4;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 0.7rem 2.6rem;
+  cursor: pointer;
+}
+
+.capacity-bar {
+  width: 100px;
+  height: 4px;
+  background-color: #E9E9E9;
+  border-radius: 5px;
+  margin: 15px 0;
+  position: relative;
+}
+
+.applied-bar {
+  height: 100%;
+  background-color: #56CDAD;
+  border-radius: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.capacity-text {
+  font-size: 0.8rem;
+  color: #7C8493;
+  margin: 1px 0;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .job-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .job-header {
+    margin-bottom: 15px;
+  }
+
+  .apply-section {
+    width: 100%;
+    align-items: flex-start;
+    margin-top: 15px;
+  }
+
+  .capacity-bar {
+    width: 100%;
+  }
+
+  .apply-button {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 768px) {
+  .job-title {
+    font-size: 0.9rem;
+  }
+
+  .job-company {
+    font-size: 0.75rem;
+  }
+
+  .job-tags {
+    flex-wrap: wrap;
+    font-size: 0.75rem;
+  }
+
+  .salary,
+  .tag {
+    font-size: 0.75rem;
+    padding: 5px 8px;
+  }
+
+  .apply-button {
+    padding: 0.6rem 2rem;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .company-logo {
+    width: 40px;
+    height: 40px;
+  }
+
+  .job-title {
+    font-size: 0.85rem;
+  }
+
+  .job-company {
+    font-size: 0.7rem;
+  }
+
+  .salary,
+  .tag {
+    font-size: 0.7rem;
+    padding: 4px 6px;
+  }
+
+  .apply-button {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.85rem;
+  }
+}

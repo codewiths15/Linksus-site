@@ -1,0 +1,227 @@
+body {
+  font-family: "Epilogue", sans-serif;
+}
+
+.main2 {
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  overflow: hidden;
+}
+
+.second-section {
+  display: flex;
+  flex-direction: column;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.apply-section {
+  padding: 20px 30px;
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.title-logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: fixed;
+  background-color: white;
+  padding: 10px 20px;
+  z-index: 10;
+  width: 75%;
+}
+
+.company-logo {
+  width: 50px;
+  height: 50px;
+}
+
+.title-info {
+  display: flex;
+  flex-direction: column;
+  margin-left: 10px;
+  flex-grow: 1;
+}
+
+.job-title {
+  font-size: 24px;
+  margin: 0;
+}
+
+.job-location {
+  color: gray;
+  margin: 10px 0 0 0;
+}
+
+.follow-button2 {
+  background: none;
+  border: 2px solid #0175C4;
+  color: #0175C4;
+  border-radius: 25px;
+  padding: 10px 25px;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.follow-button2:hover {
+  background-color: #0175C4;
+  color: white;
+}
+
+.form-wrapper {
+  margin-top: 90px; /* Space for the fixed title logo */
+  flex-grow: 1;
+  overflow-y: auto;
+  width: 100%;
+}
+
+.description {
+  margin-top: 0px;
+}
+
+.description h2 {
+  font-weight: 800;
+  color: #25324B;
+}
+
+.description p {
+  font-size: 0.8rem;
+  line-height: 20px;
+  color: #515B6F;
+}
+
+.application-form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.form-title {
+  font-size: 24px;
+  margin-bottom: 5px;
+  color: #25324B;
+
+}
+
+.form-subtitle {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 20px;
+}
+
+.form-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.form-group {
+  margin-bottom: 15px;
+  margin-top: 20px;
+}
+
+.form-group .label1 {
+  display: block;
+  margin-bottom: 5px;
+  color: #515B6F;
+  font-weight: 600;
+  cursor: auto;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid #D6DDEB;
+}
+
+.form-group input[type="file"] {
+  padding: 3px;
+}
+
+.noborder input {
+  border: none;
+}
+
+.submit-button {
+  display: block;
+  width: 68%;
+  padding: 16px;
+  background-color: #0175C4;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 16px;
+  font-weight: 600;
+  border-radius: 25px;
+  margin: 30px auto;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional Styles */
+.form-wrapper::-webkit-scrollbar {
+  width: 0px;
+  background: transparent;
+}
+
+/* Responsive Styles */
+@media (max-width: 992px) {
+  .title-logo {
+    width: 100%;
+    position: static;
+    margin-bottom: 20px;
+  }
+
+  .form-wrapper {
+    margin-top: 0;
+  }
+
+  .form-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .job-title {
+    font-size: 1.5rem;
+  }
+
+  .follow-button2 {
+    font-size: 14px;
+    padding: 8px 20px;
+  }
+
+  .submit-button {
+    width: 100%;
+  }
+
+  .form-title{
+    font-size: 16px;
+  }
+
+  .form-subtitle{
+    font-size: 11px;
+  }
+}
+
+@media (max-width: 576px) {
+  .job-title {
+    font-size: 1rem;
+  }
+
+  .follow-button2 {
+    font-size: 9px;
+    width: 90px;
+    
+  }
+}

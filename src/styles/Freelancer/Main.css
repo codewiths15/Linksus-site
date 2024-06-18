@@ -1,0 +1,19 @@
+body {
+    font-family: "Epilogue", sans-serif;
+}
+
+.main2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}

@@ -1,0 +1,126 @@
+body {
+    font-family: "Epilogue", sans-serif;
+}
+
+.main2 {
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    overflow: hidden;
+}
+
+.second-section {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.history-section {
+    width: 87%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.app-history {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+.history-section .pow {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 15px;
+    height: 40px;
+    background: none;
+    border: 1px solid #005BBF;
+    color: #005BBF;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.pow img {
+    width: auto;
+    height: 100%;
+    margin-right: 8px;
+}
+
+.history-list {
+    margin-top: 20px;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.history-list table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.history-list th,
+.history-list td {
+    padding: 12px 15px;
+    border-bottom: 1px solid #ddd;
+    text-align: left;
+    font-size: 14px;
+    color: #25324B;
+}
+
+.history-list th {
+    font-weight: 400;
+    color: #20243082;
+}
+
+.status {
+    border: 1px solid #FFB836;
+    color: #FFB836;
+    border-radius: 25px;
+    padding: 9px 5px;
+    text-align: center;
+    font-weight: 600;
+}
+
+/* Status-specific styles */
+.status.in-review {
+    border-color: #FFB836;
+    color: #FFB836;
+}
+
+.status.offered {
+    border-color: #0175C4;
+    color: #0175C4;
+}
+
+.company-logo1 {
+    width: 30px; /* Fixed width to maintain consistency */
+    height: auto; /* Maintain aspect ratio */
+    vertical-align: middle; /* Align image vertically in the middle */
+    margin-right: 10px;
+}
+
+@media (max-width: 768px) {
+    .history-section {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .history-section .pow {
+        width: 100%;
+        margin-top: 10px;
+        justify-content: center;
+    }
+
+    .history-list th, .history-list td {
+        padding: 10px;
+    }
+
+    .company-logo1 {
+        width: 30px; /* Smaller width for mobile */
+    }
+}

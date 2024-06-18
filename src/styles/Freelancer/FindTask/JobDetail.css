@@ -1,0 +1,57 @@
+/* JobDetail.css */
+.job-detail-section {
+  display: flex;
+  flex-direction: column;
+  height: 100vh; /* Full viewport height */
+}
+
+.header-section {
+  flex-shrink: 0; /* Prevents the header from shrinking */
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  font-family: "Epilogue", sans-serif;
+  font-weight: 600;
+  padding: 20px; /* Adjust padding as needed */
+  background-color: white; /* Ensure it has a background */
+  z-index: 1000; /* Ensure it stays on top if needed */
+}
+
+.header-section1 h2 {
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin: 0;
+}
+
+.header-section1 p {
+  font-size: 0.8rem;
+  font-weight: 400;
+  color: #7C8493;
+  margin: 15px 0;
+}
+
+.sort-section {
+  display: flex;
+  align-items: center;
+}
+
+.sort-section label {
+  font-size: 0.9rem;
+  color: #7c84939b;
+  margin-right: 10px;
+}
+
+.sort-section select {
+  font-size: 0.9rem;
+  padding: 5px;
+  border: none;
+  border-radius: 5px;
+  background-color: white;
+  cursor: pointer;
+}
+
+.job-list {
+  flex-grow: 1;
+  overflow-y: auto; /* Make it scrollable */
+  padding: 20px; /* Add padding to avoid content touching the edges */
+}

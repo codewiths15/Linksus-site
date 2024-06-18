@@ -1,0 +1,172 @@
+.task-details {
+  font-family: "Epilogue", sans-serif;
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.task-details h2 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.fiveapplied {
+  color: #25324b;
+  font-weight: 600;
+}
+
+.capacity {
+  margin-bottom: 20px;
+  background-color: #f8f8fd;
+  padding: 15px;
+  font-size: 0.8rem;
+  color: #7c8493;
+}
+
+.capacity-bar1 {
+  width: 100%;
+  background-color: #f3f3f3;
+  overflow: hidden;
+  height: 6px;
+  margin-top: 12px;
+}
+
+.capacity-filled {
+  height: 100%;
+  background-color: #56cdad;
+}
+
+.task-info {
+  font-size: 0.8rem;
+  color: #333;
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.task-info p {
+  display: flex;
+  justify-content: space-between;
+  margin: 10px 0;
+}
+
+.task-info .label {
+  color: #515b6f;
+  margin-right: 5px;
+}
+
+.task-info .date {
+  color: #25324b;
+  font-weight: 600;
+}
+
+.categories,
+.required-skills,
+.task-manager {
+  margin-top: 40px;
+}
+
+.categories h3,
+.required-skills h3,
+.task-manager h3 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.category {
+  display: inline-block;
+  background-color: #f3f3f3;
+  color: #7c8493;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.skill {
+  display: inline-block;
+  background-color: #f8f8fd;
+  color: #0175c4;
+  padding: 5px 10px;
+  border-radius: 15px;
+  font-size: 0.8rem;
+  margin-right: 5px;
+  margin-bottom: 5px;
+}
+
+.manager-info {
+  display: flex;
+  align-items: center;
+}
+
+.manager-photo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.manager-details {
+  display: flex;
+  flex-direction: column;
+}
+
+.manager-name {
+  font-size: 1rem;
+  font-weight: 600;
+  margin: 0;
+  color: #0175c4;
+  background-color: #f8f8fd;
+  padding: 10px;
+}
+
+.connect-button {
+  background: none;
+  border: 2px solid #0175c4;
+  color: #0175c4;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 10px 7px;
+  border-radius: 25px;
+  margin-top: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .task-details h2 {
+    font-size: 1rem;
+  }
+
+  .task-info p {
+    flex-direction: row;
+    align-items: flex-start;
+  }
+
+  .task-info .label,
+  .task-info .date {
+    font-size: 0.7rem;
+  }
+
+  .categories h3,
+  .required-skills h3,
+  .task-manager h3 {
+    font-size: 1rem;
+  }
+
+  .category,
+  .skill {
+    font-size: 0.7rem;
+  }
+
+  .manager-name,
+  .connect-button {
+    font-size: 0.8rem;
+  }
+}
