@@ -1,0 +1,71 @@
+@media (orientation: landscape) and (min-width: 768px) {
+    .pd-container {
+        /* border: 1px solid #BBB; */
+        display: flex;
+        flex-direction: column;
+        padding: 8px 20px;
+    }
+
+    .pd-bottom-container {
+        padding: 16px 8px;
+    }
+
+    .pd-top-container {
+        border-bottom: 1px solid #D6DDEB;
+        padding: 16px 8px;
+    }
+
+    h4 {
+        margin: 0px;
+        font-weight: 500;
+    }
+
+    .pd-top-grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        padding: 24px 0px 0px 0;
+    }
+
+    .pd-bottom-grid {
+        padding: 0px 0px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pd-pi-each, .pd-pi-about {
+        /* border: 1px solid black; */
+        padding: 8px;
+    }
+
+    .pd-pi-about {
+        margin-top: 12px;
+    }
+
+    span {
+        font-weight: 300;
+        color: #7C8493;
+    }
+
+    p {
+        margin: 8px 0px;
+        line-height: 1.5;
+        font-weight: 400;
+        color: #25324B;
+    }
+
+    .pd-each-skill {
+        background-color: #F8F8FD;
+        width: fit-content;
+        height: fit-content;
+        color: #0175C4;
+        padding: 4px 8px;
+    }
+
+    .pd-skills-container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        column-gap: 8px;
+        row-gap: 8px;
+    }
+    
+}
