@@ -31,9 +31,9 @@ function App() {
       {/* <Profile/> */}
       {/* <Main/> */}
       {/* <About /> */}
-      {/* <PostTask /> */}
+      <PostTask />
       {/* <TaskListing /> */}
-      <ApplicantDetails />
+      {/* <ApplicantDetails /> */}
     </div>
   );
 }
