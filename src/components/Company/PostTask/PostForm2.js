@@ -38,7 +38,7 @@ const PostForm2 = ({ onPreviousStep }) => {
   );
 
   const handleSubmit = () => {
-    //code to handle submit info
+    //code to handle submit profile info
   }
 
   return (
