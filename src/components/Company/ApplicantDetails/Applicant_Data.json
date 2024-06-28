@@ -1,0 +1,48 @@
+{
+    "applicantDetails": {
+      "id": "1",
+      "name": "Jerome Bell",
+      "profilePicture": "/sample_user.png",
+      "jobTitle": "Product Designer",
+      "appliedTasks": [
+        {
+          "taskName": "Product Design",
+          "categories": ["Marketing", "Design"],
+          "appliedDate": "2 days ago"
+        }
+      ],
+      "skills": {
+        "level": "Bad"
+      },
+      "stage": {
+        "level": "Selected"
+      },
+      "contact": {
+        "email": "jeromeBell45@email.com",
+        "phone": "+44 1245 572 135",
+        "socialLinks": {
+          "instagram": "https://instagram.com/jeromebell",
+          "twitter": "https://twitter.com/jeromebell",
+          "website": "https://www.jeromebell.com"
+        }
+      },
+      "personalInfo": {
+        "fullName": "Jerome Bell",
+        "gender": "Male",
+        "dateOfBirth": "March 23, 2002",
+        "age": 26,
+        "languages": ["English", "French", "Bahasa"],
+        "address": "4517 Washington Ave.\nManchester, Kentucky 39495"
+      },
+      "professionalInfo": {
+        "aboutMe": "I'm a product designer + filmmaker currently working remotely at Twitter from beautiful Manchester, United Kingdom. I'm passionate about designing digital products that have a positive impact on the world.\n\nFor 10 years, I've specialised in interface, experience & interaction design as well as working in user research and product strategy for product agencies, big tech companies & start-ups.",
+        "currentTask": {
+          "title": "Product Designer",
+          "experienceInYears": 4
+        },
+        "highestQualification": "Bachelors in Engineering",
+        "skillSet": ["Project Management", "Copywriting", "English", "Copywriting", "English"]
+      }
+    }
+  }
+  

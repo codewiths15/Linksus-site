@@ -33,6 +33,10 @@
         margin-left: 128px;
     }
 
+    .formGroup input:focus {
+        outline: none;
+    }
+
     .formGroup input.titleInput{
         width: 250px;
         height: 25px;

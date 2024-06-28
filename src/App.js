@@ -14,6 +14,7 @@ import About from "./components/Company/About/About"
 import PostTask from "./components/Company/PostTask/PostTask"
 import TaskListing from "./components/Company/TaskListing/TaskListing"
 import Applicants from "./components/Company/Applicants/Applicants";
+import ApplicantDetails from "./components/Company/ApplicantDetails/ApplicantDetails";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
       {/* <About /> */}
       <PostTask />
       {/* <TaskListing /> */}
+      {/* <ApplicantDetails /> */}
     </div>
   );
 }

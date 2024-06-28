@@ -22,7 +22,7 @@ const ApplicantProfile = ({pfp, name, profileLink, appliedOn, score}) => {
         <div className='ap-particular-container'>
             <p className='ap-grey-text'>Score</p>
             <div className='ap-score-container'>
-                <FaStar size={17}/>
+                <FaStar size={17} color='FFB836'/>
                 <p className='ap-p'>{score}</p>
             </div>
         </div>  
