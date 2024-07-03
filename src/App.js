@@ -19,7 +19,7 @@ import ApplicantDetails from "./components/Company/ApplicantDetails/ApplicantDet
 function App() {
   return (
     <div className="App">
-      {/* <Applicants /> */}
+      <Applicants />
       {/* <Login/>  */}
       {/* <Chat /> */}
       {/* <Signup /> */}
@@ -33,7 +33,7 @@ function App() {
       {/* <About /> */}
       {/* <PostTask /> */}
       {/* <TaskListing /> */}
-      <ApplicantDetails />
+      {/* <ApplicantDetails /> */}
     </div>
   );
 }
