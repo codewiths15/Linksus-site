@@ -4,7 +4,7 @@ import { GoDotFill } from "react-icons/go";
 import { SlOptions } from "react-icons/sl";
 import ApplicantProfile from './ApplicantProfile';
 
-const ApplicantsList = ({ title, accentColor, applicants }) => {
+const ApplicantsList = ({ title, accentColor, applicants, updateApplicantCategory }) => {
   return (
     <div className='al-container'>
       <div className='al-title-container' style={{ borderTopWidth: 2, borderTopColor: `${accentColor}` }}>
@@ -21,7 +21,10 @@ const ApplicantsList = ({ title, accentColor, applicants }) => {
             profileLink={applicant.profileLink}
             appliedOn={new Date(applicant.appliedOn).toLocaleDateString()}
             score={applicant.score.toString()}
-            profileImageLink={applicant.profileImageLink}
+            pfp={applicant.profileImageLink}
+            currentCategory={applicant.category}
+            updateApplicantCategory={updateApplicantCategory}
+            email = {applicant.email}
           />
         ))}
       </div>

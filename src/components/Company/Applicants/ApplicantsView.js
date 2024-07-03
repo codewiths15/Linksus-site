@@ -7,6 +7,15 @@ import FakeData from "./../fakeData.json";
 
 const ApplicantsView = () => {
   const [searchApplicant, setSearchApplicant] = useState("");
+  const [applicants, setApplicants] = useState(FakeData);
+
+  const updateApplicantCategory = (name, newCategory) => {
+    setApplicants(prevApplicants => 
+      prevApplicants.map(applicant =>
+        applicant.name === name ? { ...applicant, category: newCategory } : applicant
+      )
+    );
+  };
 
   return (
     <div className='ApplicantsViewContainer'>
@@ -14,7 +23,7 @@ const ApplicantsView = () => {
       <div>
         <div>
           <div className='av-inner-container-1'>
-            <h3>Total Applicants: {FakeData.length}</h3>
+            <h3>Total Applicants: {applicants.length}</h3>
             <div className='av-inner-container-2'>
               <div className='av-search-bar'>
                 <FiSearch size={25} color='#A8ADB7'/>
@@ -33,21 +42,23 @@ const ApplicantsView = () => {
           </div>
           <div className='av-table'>
             <ApplicantsList 
-            title="In Review" 
-            accentColor="#FFB836" 
-            applicants={FakeData.filter(applicant => applicant.category === "In review")}/>
+              title="Applied" 
+              accentColor="#FFB836" 
+              applicants={applicants.filter(applicant => applicant.category === "Applied")}
+              updateApplicantCategory={updateApplicantCategory}
+            />
             <ApplicantsList 
-            title="Shortlisted" 
-            accentColor="#7B61FF" 
-            applicants={FakeData.filter(applicant => applicant.category === "Shortlisted")}/>
+              title="Shortlisted" 
+              accentColor="#7B61FF" 
+              applicants={applicants.filter(applicant => applicant.category === "Shortlisted")}
+              updateApplicantCategory={updateApplicantCategory}
+            />
             <ApplicantsList 
-            title="Not Shortlisted" 
-            accentColor="#26A4FF" 
-            applicants={FakeData.filter(applicant => applicant.category === "Not Shortlisted")}/>
-            <ApplicantsList 
-            title="Waitlist" 
-            accentColor="#56CDAD" 
-            applicants={FakeData.filter(applicant => applicant.category === "Waitlist")}/>
+              title="Selected" 
+              accentColor="#56CDAD" 
+              applicants={applicants.filter(applicant => applicant.category === "Selected")}
+              updateApplicantCategory={updateApplicantCategory}
+            />
           </div>
         </div>
         <div>
