@@ -9,12 +9,19 @@ import "./App.css";
 // import History from "./components/Freelancer/ApplicationHistory/History";
 // import Profile from "./components/Freelancer/UserProfile/Profile";
 import Main from "./components/Freelancer/Main";
+import Chat from "./components/Misc/Chat"
+import About from "./components/Company/About/About"
+import PostTask from "./components/Company/PostTask/PostTask"
+import TaskListing from "./components/Company/TaskListing/TaskListing"
+import Applicants from "./components/Company/Applicants/Applicants";
+import ApplicantDetails from "./components/Company/ApplicantDetails/ApplicantDetails";
 
 function App() {
   return (
     <div className="App">
+      {/* <Applicants /> */}
       {/* <Login/>  */}
-
+      {/* <Chat /> */}
       {/* <Signup /> */}
       {/* <Navigation/> */}
       {/* <Task/> */}
@@ -22,7 +29,11 @@ function App() {
       {/* <Apply/> */}
       {/* <History/> */}
       {/* <Profile/> */}
-      <Main/>
+      {/* <Main/> */}
+      {/* <About /> */}
+      {/* <PostTask /> */}
+      {/* <TaskListing /> */}
+      <ApplicantDetails />
     </div>
   );
 }

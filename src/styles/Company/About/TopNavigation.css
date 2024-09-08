@@ -1,0 +1,29 @@
+@media (orientation: landscape) and (min-width: 768px) {
+    .navContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        padding: 6px;
+        align-items: center;
+        width: 98%;
+    }
+
+    .postTaskBtn {
+        padding: 10px 10px 10px 16px;
+        border-radius: 25px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        background-color: #0175C4;
+        border: transparent;
+        margin-left: 20px ;
+        margin-right: 12px;
+    }
+    .postBtnText {
+        font-size: 15px;
+        margin-bottom: 12px;
+        color: #FFFFFF;
+        margin: 0px 8px;
+        font-weight: bold;
+      }
+}

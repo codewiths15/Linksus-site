@@ -1,0 +1,88 @@
+.ap-container {
+    position: relative;
+    transition: all 0.3s ease;
+    /* border: 1px solid black; */
+  }
+  
+  .ap-top-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+  }
+  
+  .ap-bottom-container {
+    margin-top: 16px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 8px;
+    padding: 8px;
+  }
+  
+  .user-pfp {
+    width: 75px;
+    height: 75px;
+    border-radius: 100%;
+    margin-right: 8px;
+    padding: 0px 8px;
+  }
+  
+  .ap-particular-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .ap-grey-text {
+    color: #7C8493;
+    margin: 4px;
+  }
+  
+  .ap-p {
+    margin: 4px 4px;
+    font-weight: 500;
+    color: #25324B;
+  }
+  
+  .ap-score-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .ap-hover-buttons {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 12px;
+    opacity: 0;
+    transform: translateY(-20px);
+    transition: all 0.3s ease;
+  }
+  
+  .ap-hover-buttons button {
+    padding: 8px 16px;
+    background-color: #0175C4;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+  
+  .ap-hover-buttons button:hover {
+    background-color: #0056b3;
+  }
+  
+  .ap-container:hover .ap-hover-buttons {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .ap-container:hover {
+    margin-top: 12px;
+    padding-bottom: 30px; /* Adjust this value to create the desired elongation effect */
+    border-bottom: 1px solid #D6DDEB;
+    margin-bottom: 24px;
+  }
+  

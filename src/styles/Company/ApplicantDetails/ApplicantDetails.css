@@ -1,0 +1,18 @@
+@media (orientation: landscape) and (min-width: 768px) {
+    .ad-container {
+        display: flex;
+        flex-direction: row;
+      }
+    
+      .ad-main-content {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        background-color: #f9f9f9;
+        overflow-y: scroll; /* Ensure scrolling is still possible */
+        height: 100%; /* Ensure the mainContent takes up the full height of the container */
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+      }
+}

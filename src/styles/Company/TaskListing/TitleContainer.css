@@ -1,0 +1,48 @@
+@media (orientation: landscape) and (min-width: 768px) {
+    .titleBarContainer {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 12px;
+        border-top: solid #D6DDEB 1px;
+        width: 98%;
+    }
+
+    .titleBar{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+    }
+
+    .titleBarTitle {
+        margin: 12px 4px 12px 4px;
+        font-weight: bold;
+        font-size: 24px;
+        color: #25324B;
+    }
+
+    .titleBarSubText {
+        margin:4px 4px 12px 4px;
+        text-align: left;
+        color: #7C8493;
+        font-size: 14px;
+    }
+
+    .scheduleBtn {
+        border: solid #D6DDEB 1px;
+        height: fit-content;
+        width: fit-content;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-right: 20px;
+        padding: 2px 12px;
+        background-color: #fff;
+    }
+
+    .scheduleBtnText {
+        margin-right: 16px;
+        color: #25324B;
+        font-size: 12px;
+    }
+}

@@ -1,0 +1,28 @@
+@media (orientation: landscape) and (min-width: 768px) {
+    .postTaskContainer {
+        display: flex;
+        flex-direction: row;
+        height: 100vh;
+      }
+    
+      .postTaskMainContent {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        background-color: #f9f9f9;
+        overflow-x: hidden;
+        overflow-y: scroll; /* Ensure scrolling is still possible */
+        height: 100%; /* Ensure the mainContent takes up the full height of the container */
+        -webkit-overflow-scrolling: touch;
+        -ms-overflow-style: none;  /* Internet Explorer 10+ */
+        scrollbar-width: none;  /* Firefox */
+      }
+
+      .postTaskHeaderDuo {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        border-bottom: 1px solid #D6DDEB;
+      }
+}

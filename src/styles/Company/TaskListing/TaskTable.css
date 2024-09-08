@@ -1,0 +1,160 @@
+@media (orientation: landscape) and (min-width: 768px) {
+    .taskTableTitle {
+        display: flex;
+        flex-direction: column;
+        width: 95%;
+        border: solid #D6DDEB 1px;
+        padding: 12px 12px;
+        align-self: center;
+    }
+
+    .taskTableTitleTop {
+        justify-content: space-between;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .taskTableTitleText {
+        color: #25324B;
+        font-weight: bold;
+        font-size: 24px;
+    }
+
+    .taskTableFiltersBtn {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        height: fit-content;
+        padding: 8px 6px;
+        margin-right: 12px;
+        border: solid #D6DDEB 1px;
+        background-color: #fff;
+    }
+
+    .taskTableFiltersBtn:hover {
+        background-color: #e0e0e0;
+      }
+
+    .filterBtnText {
+        margin: 2px 6px 2px 6px;
+        font-weight: 600;
+        font-size: 12px;
+        color: #25324B;
+    }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin: 0 auto;
+      }
+      
+    table thead tr {
+        background-color: #fff;
+        color: #ffffff;
+        text-align: left;
+    }
+      
+    table th {
+        color: #C7C8CC;
+        padding: 12px 15px;
+    }
+    
+    table td {
+        padding: 16px 15px;
+    }
+      
+    table tbody tr {
+        border-bottom: 1px solid #ddd;
+    }
+      
+    table tbody tr:nth-of-type(even) {
+        background-color: #f3f3f3;
+    }
+      
+    table tbody tr:last-of-type {
+        border-bottom: 2px solid #009879;
+    }
+
+    .tdCentered {
+        display: flex;
+        justify-content: center;
+    }
+
+    .redRoundBtn, .blueRoundBtn, .yellowRoundBtn, .greenRoundBtn {
+        font-weight: bold;
+        font-size: 12px;
+        padding: 4px 12px;
+        border: solid 2px;
+        border-radius: 20px;
+    }
+
+    .redRoundBtn {
+        color: #FF6550;
+    }
+
+    .blueRoundBtn {
+        color: #0175C4;
+    }
+
+    .greenRoundBtn {
+        color: #56CDAD;
+    }
+
+    .yellowRoundBtn {
+        color: #FFB836;
+    }
+
+    .tableControlContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 6px 12px;
+        align-items: center;
+    }
+
+    .subTexts {
+        color: #7C8493;
+        font-size: 14px;
+        font-weight: normal;
+        margin: 0px 6px;
+    }
+
+    .tcLeft, .tcRight {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .applicantSelector {
+        border: solid #D6DDEB 1px;
+        font-size: 14px;
+        padding: 4px;
+    }
+
+    .optionsBtn {
+        background-color: #fff;
+        border: transparent;
+    }
+
+    .pageMarker {
+        display: flex;
+        flex-direction: row;
+        margin: 4px 6px;
+        align-items: center;
+        padding: 4px 8px;
+        color: #515B6F;
+    }
+
+    .pageMarkerSelected {
+        display: flex;
+        flex-direction: row;
+        margin: 2px 6px;
+        align-items: center;
+        border: transparent;
+        padding: 6px 10px 2px 10px;
+        border-radius: 5px;
+        background-color: #0175C4;
+        color: #fff;
+    }
+}

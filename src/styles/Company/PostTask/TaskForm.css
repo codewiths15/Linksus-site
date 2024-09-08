@@ -1,0 +1,11 @@
+@media (orientation: landscape) and (min-width: 768px) {
+    .taskFormContent {
+        width: 100%;
+        background: white;
+        border-radius: 8px;
+        margin-left: 16px;
+        padding-left: 14px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding-bottom: 12px;
+    }
+}

@@ -1,0 +1,32 @@
+@media (orientation: landscape) and (min-width: 768px) {
+    .companyDropdownContainer {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 4px 12px;
+    }
+
+    .subCompanyDropdownDivider {
+        display: flex;
+        flex-direction: column;
+        margin-left: 8px;
+        height: 100%;
+        justify-content: space-around;
+    }
+
+    .subCompanyDropdownTitle {
+        color: #515B6F;
+        font-size: 12px;
+    }
+
+    .subCompanyDropdownName {
+        color: #25324B;
+        margin-right: 4px;
+    }
+
+    .subCompanyDropdown {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+}
